@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изображения</title>
+</head>
+<body>
+    <!-- Задание #1 -->
+    <table align="center">
+        <tr>
+            <td>
+                <img src="images/caravell.webp" alt="Описание изображения 1" title="Заголовок изображения 1" width="300" height="200">
+            </td>
+            <td>
+                <img src="images/citroen-c5.webp" alt="Описание изображения 2" title="Заголовок изображения 2" width="300" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <img src="images/citroen_suv.webp" alt="Описание изображения 3" title="Заголовок изображения 3" width="300" height="200" style="border: 2px solid black;">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Задание #2 + Задание#3-->
+    <h2>Date despre copiii colaboratorilor</h2>
+
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Nume, prenume</th>
+            <th>Adresa fizică</th>
+            <th>Număr copii minori</th>
+            <th>Prenume copil și anul de naștere</th>
+            <th>Poza copil</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ivanov Elena</td>
+            <td>Str. Codrilor 45, ap.56</td>
+            <td>2</td>
+            <td><a href="details_elena.html">Elena, 2006</a></td>
+            <td><a href="details_elena.html"><img width="150px" height="150px" src="images/kid1.jpg" alt="Poza copil 1"></a></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Mihailov Marta</td>
+            <td rowspan="3">Str. Puskin 10, ap.45</td>
+            <td rowspan="3">3</td>
+            <td><a href="details_valeriu.html">Valeriu, 2011</a></td>
+            <td><a href="details_valeriu.html"><img width="150px" height="150px" src="images/kid2.jpg" alt="Poza copil 2"></a></td>
+        </tr>
+        <tr>
+            <td><a href="details_ion.html">Ion, 2008</a></td>
+            <td><a href="details_ion.html"><img width="150px" height="150px" src="images/kid3.jpg" alt="Poza copil 3"></a></td>
+        </tr>
+        <tr>
+            <td><a href="details_ecaterina.html">Ecaterina, 2010</a></td>
+            <td><a href="details_ecaterina.html"><img width="150px" height="150px" src="images/kid4.jpg" alt="Poza copil 4"></a></td>
+        </tr>
+        <tr>
+            <td>Ciucnicov Magdalena</td>
+            <td>Str. Nucilor 34, ap. 22</td>
+            <td>1</td>
+            <td><a href="details_mariuta.html">Mariuta, 2012</a></td>
+            <td><a href="details_mariuta.html"><img width="150px" height="150px" src="images/kid5.jpg" alt="Poza copil 5"></a></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;">Total număr copii</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <!-- Задание #4 -->
+    <h1>Изображение-карта</h1>
+    <p>На изображении ниже определены три кликабельные области: круг, прямоугольник и многоугольник. Нажмите на каждую область, чтобы узнать больше информации.</p>
+
+    <img src="images/map.jpeg" alt="Map" usemap="map">
+
+    <map name="map">
+        <area title="Австралия" shape="circle" coords="740, 500, 90" href="https://ru.wikipedia.org/wiki/Австралия" alt="Австралия">
+        <area title="Южная Америка" shape="rect" coords="170, 300, 320, 650 " href="https://ru.wikipedia.org/wiki/Южная_Америка" alt="Южная Америка">
+        <area title="Северная Америка" shape="poly" coords="100, 20, 380, 100, 100, 450" href="https://ru.wikipedia.org/wiki/Северная_Америка" alt="Северная Америка">
+     </map>
+
+    <!-- Задание #5 -->
+    <form>
+        <table>
+           <tr>
+              <td rowspan="2"> 
+                 <!-- Ячейка 1 -->
+                 <fieldset>
+                    <legend><b>Date personale</b></legend>
+                 <table>
+                    <tr>
+                       <td><label for="">*Numele:</label></td>
+                       <td><input type="text" name="Numele" pattern="[A-Za-z]+" autofocus required></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">*Prenumele:</label></td>
+                       <td><input type="text" name="Prenumele" pattern="[A-Za-z]+" required></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">E-mail:</label></td>
+                       <td><input type="email" name="E-mail"  ></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">*Data nasterii:</label></td>
+                       <td><input type="date" name="Data nasterii"  required></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">Sexul:</label></td>
+                       <td><input type="radio" value="F" name="Sexul"><b>F</b><input type="radio" value="M" name="Sexul"><b>M</b></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">Telefonul:</label></td>
+                       <td><input type="tel"name="Telefonul"></td>
+                    </tr>
+                    <tr>
+                       <td><label for="">Raionul:</label></td>
+                       <td>
+                          <select name="Raionul" id="">
+                             <option value="">Chisinau</option>
+                             <option value="">Balti</option>
+                             <option value="" selected>Edine&#355</option>
+                             <option value="">Soroca</option>
+                             <option value="">Straseni</option>
+                             <option value="">Durlesti</option>
+                          </select>
+                       </td>
+                    </tr>
+                    <tr>
+                       <td><label for="">Studii</label></td>
+                       <td>
+                          <input type="checkbox" name="Studii" value="Colegiu">Colegiu<br>
+                          <input type="checkbox" name="Studii" value="Licen&#355&#259">Licen&#355&#259<br>
+                          <input type="checkbox" name="Studii" value="Masterat">Masterat<br>
+                       </td>
+                    </tr>
+                    <tr>
+                          <td><label for="">Suplimentar:</label></td>
+                          <td><textarea rows="8" cols="30" placeholder="Scrie aici" maxlength="1000"></textarea></td>
+                    </tr>
+                 </table>
+              </fieldset></td>
+              <td>
+                 <!-- Ячейка 2 -->
+                 <fieldset>
+                    <legend><b>Date pentre produsul ales</b></legend>
+                    <table>
+                       <tr>
+                          <td><label for="">*Denumirea produs:</label></td>
+                          <td><input type="text" name="Denumirea produs" pattern="[A-Za-z]+" required></td> Pattern
+                       <tr>
+                          <td><label for="">*Produc&#259torul:</label></td>
+                          <td><input type="text" name="Produc&#259torul"  pattern="[A-Za-z]+" required></td>
+                       </tr>
+                       <tr>
+                          <td><label for="">*Cantitatea de produs:</label></td>
+                          <td><input type="text" name="Cantitatea de produse"  required></td>
+                       </tr>
+                       <tr>
+                          <td><label for="">*Culorea:</label></td>
+                          <td><input type="color" name="Culoarea"  required></td>
+                       </tr>
+                       <tr>
+                          <td><label for="">*M&#259rimea:</label></td>
+                          <td><input type="text" name="M&#259rimea"  required></td>
+                       </tr>
+                       <br>
+                    </table>
+                    <br>
+                 </fieldset></td>
+           </tr>
+           <tr>
+              <td>
+                 <!--Ячейка 3  -->
+                 <fieldset>
+                    <legend><b>Date bancare</b></legend>
+                    <table>
+                      <tr>
+                         <td><label for="">*Tipul cardului:</label></td>
+                         <td>
+                            <input type="radio" name="Tipul cardului" value="Viza"required><b>Viza</b>
+                            <input type="radio" name="Tipul cardului" value="Master card"required><b>MasterCard</b>
+                         </td>
+                      </tr>
+                      <tr>
+                         <td><label for="">*Num&#259rul cardului:</label></td>
+                         <td><input type="text" name="Num&#259rul cardului"  required></td>
+                      </tr>
+                      <tr>
+                         <td><label for="">*Expir&#259:</label></td>
+                         <td><input type="date" name="Expir&#259"  required></td>
+                      </tr>
+                      <br><br><br>
+                    </table>
+                    <br><br>
+                 </fieldset></td>
+           </tr>
+           <tr>
+              <td colspan="2"><pre> <input type="reset" value="Anuleaza"> <input type="submit" value="Trimite">                                  <b>*C&acircmpul trebuie s&#259 fie completat</b></pre></td>
+           </tr>
+        </table>
+     </form>
+     
+
+    <!-- Задание #6 -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d615.476081755781!2d37.723968455466625!3d55.586389801677946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab1a32b5d382d%3A0xeb5b067c1dea1249!2sI%20Love%20Fitness!5e1!3m2!1sru!2s!4v1727543972877!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Задание #7 -->
+    <!-- Вставка аудио -->
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="Audio/song.mp3" type="audio/mpeg">
+        <source src="Audio/song.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <!-- Вставка видео -->
+    <h2>Video Example</h2>
+    <video width="640" height="360" controls>
+        <source src="Video/hero.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
